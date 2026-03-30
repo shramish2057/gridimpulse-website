@@ -1,3 +1,14 @@
+"use client";
+
+function scrollToFeatures() {
+  const el = document.getElementById("features");
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" });
+  } else {
+    window.location.href = "/";
+  }
+}
+
 export default function Footer() {
   return (
     <footer className="border-t border-grid-border bg-grid-dark">
@@ -19,7 +30,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {["Fault Detection", "Congestion Management", "Load Forecasting", "Topology Monitoring", "Decision Workflow"].map((item) => (
                 <li key={item}>
-                  <a href="/" className="text-xs text-grid-text-dim hover:text-grid-green transition-colors">{item}</a>
+                  <button onClick={scrollToFeatures} className="text-xs text-grid-text-dim hover:text-grid-green transition-colors bg-transparent border-none cursor-pointer p-0">{item}</button>
                 </li>
               ))}
             </ul>
