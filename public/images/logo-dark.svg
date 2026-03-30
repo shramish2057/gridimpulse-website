@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" fill="none">
+  <!-- GI Logo for dark backgrounds -->
+
+  <!-- G letterform built from grid segments -->
+  <g transform="translate(4, 4)">
+    <!-- Outer grid frame of G -->
+    <path d="M0 0 L28 0" stroke="#16A34A" stroke-width="3.2" stroke-linecap="square"/>
+    <path d="M0 0 L0 40" stroke="#16A34A" stroke-width="3.2" stroke-linecap="square"/>
+    <path d="M0 40 L28 40" stroke="#16A34A" stroke-width="3.2" stroke-linecap="square"/>
+    <path d="M28 40 L28 20" stroke="#16A34A" stroke-width="3.2" stroke-linecap="square"/>
+    <!-- G crossbar -->
+    <path d="M14 20 L28 20" stroke="#16A34A" stroke-width="3.2" stroke-linecap="square"/>
+
+    <!-- Grid nodes on G -->
+    <circle cx="0" cy="0" r="2.5" fill="#16A34A"/>
+    <circle cx="28" cy="0" r="2.5" fill="#16A34A"/>
+    <circle cx="0" cy="20" r="2.5" fill="#16A34A"/>
+    <circle cx="0" cy="40" r="2.5" fill="#16A34A"/>
+    <circle cx="28" cy="40" r="2.5" fill="#16A34A"/>
+    <circle cx="28" cy="20" r="2.5" fill="#16A34A"/>
+    <circle cx="14" cy="20" r="2.5" fill="#16A34A"/>
+
+    <!-- Internal grid line on G -->
+    <path d="M0 20 L14 20" stroke="#16A34A" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 3"/>
+    <path d="M14 0 L14 20" stroke="#16A34A" stroke-width="1" stroke-opacity="0.3" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- I letterform as transmission tower / power line -->
+  <g transform="translate(42, 4)">
+    <!-- Top crossbar -->
+    <path d="M0 0 L20 0" stroke="#16A34A" stroke-width="3.2" stroke-linecap="square"/>
+    <!-- Vertical trunk -->
+    <path d="M10 0 L10 40" stroke="#16A34A" stroke-width="3.2" stroke-linecap="square"/>
+    <!-- Bottom crossbar -->
+    <path d="M0 40 L20 40" stroke="#16A34A" stroke-width="3.2" stroke-linecap="square"/>
+
+    <!-- Grid nodes on I -->
+    <circle cx="0" cy="0" r="2.5" fill="#16A34A"/>
+    <circle cx="20" cy="0" r="2.5" fill="#16A34A"/>
+    <circle cx="10" cy="0" r="2.5" fill="#16A34A"/>
+    <circle cx="0" cy="40" r="2.5" fill="#16A34A"/>
+    <circle cx="20" cy="40" r="2.5" fill="#16A34A"/>
+    <circle cx="10" cy="40" r="2.5" fill="#16A34A"/>
+
+    <!-- Cross arms (transmission tower detail) -->
+    <path d="M5 12 L15 12" stroke="#16A34A" stroke-width="0.8" stroke-linecap="square"/>
+    <path d="M5 28 L15 28" stroke="#16A34A" stroke-width="0.8" stroke-linecap="square"/>
+
+    <!-- Cross arm nodes -->
+    <circle cx="5" cy="12" r="1.0" fill="#16A34A"/>
+    <circle cx="15" cy="12" r="1.0" fill="#16A34A"/>
+    <circle cx="5" cy="28" r="1.0" fill="#16A34A"/>
+    <circle cx="15" cy="28" r="1.0" fill="#16A34A"/>
+    <circle cx="10" cy="20" r="1.0" fill="#16A34A"/>
+
+    <!-- Power lines hanging from cross arms -->
+    <path d="M5 12 Q7 20 5 28" stroke="#16A34A" stroke-width="0.8" fill="none" stroke-opacity="0.5"/>
+    <path d="M15 12 Q13 20 15 28" stroke="#16A34A" stroke-width="0.8" fill="none" stroke-opacity="0.5"/>
+  </g>
+
+  <!-- Pulse / impulse line connecting G to I -->
+  <g transform="translate(35, 24)">
+    <path d="M0 0 L2 0 L3.5 -6 L5 6 L6.5 -3 L8 0 L10 0" stroke="#16A34A" stroke-width="1.2" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.6"/>
+  </g>
+
+  <!-- "GRID IMPULSE" text -->
+  <text x="74" y="20" font-family="'SF Pro Display', 'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="700" letter-spacing="3.5" fill="#e8e8e8">GRID</text>
+  <text x="74" y="38" font-family="'SF Pro Display', 'Inter', 'Segoe UI', system-ui, sans-serif" font-size="11" font-weight="400" letter-spacing="3.5" fill="#16A34A">IMPULSE</text>
+</svg>

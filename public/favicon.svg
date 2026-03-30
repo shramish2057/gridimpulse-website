@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Grid Impulse Favicon: GI monogram in a grid-circuit style -->
+
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="#030509"/>
+
+  <!-- G letterform (left half) -->
+  <g transform="translate(3.5, 5)">
+    <!-- G strokes -->
+    <path d="M0 0 L12 0" stroke="#16A34A" stroke-width="2.2" stroke-linecap="square"/>
+    <path d="M0 0 L0 22" stroke="#16A34A" stroke-width="2.2" stroke-linecap="square"/>
+    <path d="M0 22 L12 22" stroke="#16A34A" stroke-width="2.2" stroke-linecap="square"/>
+    <path d="M12 22 L12 11" stroke="#16A34A" stroke-width="2.2" stroke-linecap="square"/>
+    <path d="M6 11 L12 11" stroke="#16A34A" stroke-width="2.2" stroke-linecap="square"/>
+
+    <!-- G junction nodes -->
+    <circle cx="0" cy="0" r="1.8" fill="#16A34A"/>
+    <circle cx="12" cy="0" r="1.8" fill="#16A34A"/>
+    <circle cx="0" cy="22" r="1.8" fill="#16A34A"/>
+    <circle cx="12" cy="22" r="1.8" fill="#16A34A"/>
+    <circle cx="12" cy="11" r="1.8" fill="#16A34A"/>
+    <circle cx="6" cy="11" r="1.8" fill="#16A34A"/>
+  </g>
+
+  <!-- I letterform (right half, transmission tower style) -->
+  <g transform="translate(19, 5)">
+    <!-- I strokes -->
+    <path d="M0 0 L10 0" stroke="#16A34A" stroke-width="2.2" stroke-linecap="square"/>
+    <path d="M5 0 L5 22" stroke="#16A34A" stroke-width="2.2" stroke-linecap="square"/>
+    <path d="M0 22 L10 22" stroke="#16A34A" stroke-width="2.2" stroke-linecap="square"/>
+
+    <!-- Cross arms -->
+    <path d="M2.5 7 L7.5 7" stroke="#16A34A" stroke-width="0.8" stroke-linecap="square"/>
+    <path d="M2.5 15 L7.5 15" stroke="#16A34A" stroke-width="0.8" stroke-linecap="square"/>
+
+    <!-- I junction nodes -->
+    <circle cx="0" cy="0" r="1.8" fill="#16A34A"/>
+    <circle cx="10" cy="0" r="1.8" fill="#16A34A"/>
+    <circle cx="5" cy="0" r="1.5" fill="#16A34A"/>
+    <circle cx="0" cy="22" r="1.8" fill="#16A34A"/>
+    <circle cx="10" cy="22" r="1.8" fill="#16A34A"/>
+
+    <!-- Cross arm nodes -->
+    <circle cx="2.5" cy="7" r="0.7" fill="#16A34A"/>
+    <circle cx="7.5" cy="7" r="0.7" fill="#16A34A"/>
+    <circle cx="2.5" cy="15" r="0.7" fill="#16A34A"/>
+    <circle cx="7.5" cy="15" r="0.7" fill="#16A34A"/>
+
+    <!-- Power line curves -->
+    <path d="M2.5 7 Q4 11 2.5 15" stroke="#16A34A" stroke-width="0.6" fill="none" stroke-opacity="0.5"/>
+    <path d="M7.5 7 Q6 11 7.5 15" stroke="#16A34A" stroke-width="0.6" fill="none" stroke-opacity="0.5"/>
+  </g>
+
+  <!-- Impulse spark between G and I -->
+  <path d="M16 16 L17 13.5 L18 18 L19 15" stroke="#16A34A" stroke-width="0.9" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.7"/>
+</svg>
