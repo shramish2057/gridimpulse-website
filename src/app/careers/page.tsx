@@ -6,33 +6,21 @@ export const metadata = {
   description: "Join Grid Impulse. We are building autonomous AI agents for European grid operators.",
 };
 
-const roles = [
+const areas = [
   {
-    title: "Power Systems Engineer",
-    type: "Part-time / Advisory",
-    location: "Frankfurt or remote",
+    title: "Engineering",
     description:
-      "Deep expertise in TSO/DSO operations, IEC standards, or grid dynamics.",
-    details:
-      "You will validate agent decision logic against real grid physics, review congestion and fault detection thresholds, and advise on regulatory compliance.",
+      "Power systems, machine learning, backend infrastructure. If you build things that work under real-world constraints, we want to talk.",
   },
   {
-    title: "ML Engineer",
-    type: "Full-time",
-    location: "Frankfurt or remote",
+    title: "Energy Domain",
     description:
-      "Experience with time series forecasting, anomaly detection, or reinforcement learning for physical systems.",
-    details:
-      "You will work on the forecasting and detection agents: improving model accuracy, adding new signal sources, and building the feedback loop from operator decisions back into model training.",
+      "Grid operations, regulatory frameworks, IEC standards, market design. Help us make sure our agents understand how the grid actually works.",
   },
   {
-    title: "Business Development",
-    type: "Part-time",
-    location: "Remote",
+    title: "Business",
     description:
-      "Network in the German or Dutch energy sector. DSO or Stadtwerk relationships a strong plus.",
-    details:
-      "You will drive early customer conversations, support PoC scoping, and help position Grid Impulse with the right operators at the right time.",
+      "Partnerships, customer conversations, go-to-market in the European energy sector. Help us reach the operators who need this most.",
   },
 ];
 
@@ -58,21 +46,14 @@ export default function CareersPage() {
             on real infrastructure that affects millions of people, read on.
           </p>
 
-          {/* Open roles */}
-          <h2 className="font-display font-bold text-2xl text-grid-text mb-8">Open Roles</h2>
+          {/* Areas we hire in */}
+          <h2 className="font-display font-bold text-2xl text-grid-text mb-8">Where you can contribute</h2>
 
           <div className="space-y-6 mb-16">
-            {roles.map((role) => (
-              <div key={role.title} className="p-8 rounded-xl border border-grid-border bg-grid-surface/30">
-                <div className="flex flex-wrap items-center gap-3 mb-4">
-                  <h3 className="font-display font-bold text-xl text-grid-text">{role.title}</h3>
-                  <span className="px-2.5 py-0.5 text-xs font-mono text-grid-green bg-grid-green/10 border border-grid-green/20 rounded">
-                    {role.type}
-                  </span>
-                </div>
-                <p className="text-xs font-mono text-grid-text-dim tracking-wider mb-4">{role.location}</p>
-                <p className="text-grid-text-dim leading-relaxed mb-3">{role.description}</p>
-                <p className="text-sm text-grid-text-dim leading-relaxed">{role.details}</p>
+            {areas.map((area) => (
+              <div key={area.title} className="p-8 rounded-xl border border-grid-border bg-grid-surface/30">
+                <h3 className="font-display font-bold text-xl text-grid-text mb-3">{area.title}</h3>
+                <p className="text-grid-text-dim leading-relaxed">{area.description}</p>
               </div>
             ))}
           </div>
@@ -80,7 +61,7 @@ export default function CareersPage() {
           {/* Bottom CTA */}
           <div className="p-8 rounded-xl border border-grid-border bg-grid-surface/30 text-center">
             <p className="text-grid-text-dim leading-relaxed">
-              Don&apos;t see your role? Email{" "}
+              We don&apos;t have formal job postings yet. If any of this resonates, email{" "}
               <a href="mailto:contact@gridimpulse.com" className="text-grid-green hover:underline">
                 contact@gridimpulse.com
               </a>{" "}

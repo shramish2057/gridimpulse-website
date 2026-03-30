@@ -36,7 +36,6 @@ export default function ImprintPage() {
               <div className="p-6 rounded-xl border border-grid-border bg-grid-surface/30 space-y-4 text-grid-text-dim leading-relaxed">
                 <div>
                   <p className="text-grid-text font-display font-bold">Grid Impulse UG (in Gr&uuml;ndung)</p>
-                  <p>[Stra&szlig;e und Hausnummer] <span className="text-grid-amber text-xs font-mono">TODO: fill in after UG registration</span></p>
                   <p>Frankfurt am Main, Deutschland</p>
                 </div>
 
@@ -49,11 +48,6 @@ export default function ImprintPage() {
                     </a>
                   </p>
                   <p>Web: gridimpulse.com</p>
-                </div>
-
-                <div>
-                  <h3 className="text-sm font-display font-semibold text-grid-text mb-1">Vertretungsberechtigte Person:</h3>
-                  <p>[Name des Gr&uuml;nders] <span className="text-grid-amber text-xs font-mono">TODO: fill in after UG registration</span></p>
                 </div>
 
                 <div>
@@ -93,7 +87,6 @@ export default function ImprintPage() {
               <div className="p-6 rounded-xl border border-grid-border bg-grid-surface/30 space-y-4 text-grid-text-dim leading-relaxed">
                 <div>
                   <p className="text-grid-text font-display font-bold">Grid Impulse UG (in Gr&uuml;ndung)</p>
-                  <p>[Street address] <span className="text-grid-amber text-xs font-mono">TODO: fill in after UG registration</span></p>
                   <p>Frankfurt am Main, Germany</p>
                 </div>
 
@@ -106,11 +99,6 @@ export default function ImprintPage() {
                     </a>
                   </p>
                   <p>Web: gridimpulse.com</p>
-                </div>
-
-                <div>
-                  <h3 className="text-sm font-display font-semibold text-grid-text mb-1">Representative:</h3>
-                  <p>[Founder name] <span className="text-grid-amber text-xs font-mono">TODO: fill in after UG registration</span></p>
                 </div>
 
                 <div>
