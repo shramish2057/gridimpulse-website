@@ -3,9 +3,9 @@
 import { useCountUp, useReveal } from "@/lib/useReveal";
 
 const stats = [
-  { value: 600, suffix: "+", label: "Hours of grid congestion annually in Germany", prefix: "" },
-  { value: 1200, suffix: "M", label: "EUR redispatch costs in Germany alone (2023)", prefix: "€" },
-  { value: 50, suffix: "%", label: "Renewable penetration target by 2030", prefix: "" },
+  { value: 3000, suffix: "+", label: "Hours of redispatch-relevant grid congestion in Germany (BNetzA, 2023)", prefix: "" },
+  { value: 3100, suffix: "M", label: "Redispatch costs in Germany (BNetzA, 2023)", prefix: "€" },
+  { value: 80, suffix: "%", label: "Renewable electricity target by 2030 (EEG 2023)", prefix: "" },
 ];
 
 export default function ProblemSection() {

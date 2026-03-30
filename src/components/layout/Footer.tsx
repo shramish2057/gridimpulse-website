@@ -46,9 +46,15 @@ export default function Footer() {
           <div>
             <h4 className="font-display font-semibold text-xs tracking-widest text-grid-text mb-4 uppercase">Company</h4>
             <ul className="space-y-2">
-              {["About", "Careers", "Contact", "Privacy Policy", "Imprint"].map((item) => (
-                <li key={item}>
-                  <a href="#" className="text-xs text-grid-text-dim hover:text-grid-green transition-colors">{item}</a>
+              {[
+                { label: "About", href: "/about" },
+                { label: "Careers", href: "/careers" },
+                { label: "Contact", href: "/contact" },
+                { label: "Privacy Policy", href: "/privacy-policy" },
+                { label: "Imprint", href: "/imprint" },
+              ].map((item) => (
+                <li key={item.label}>
+                  <a href={item.href} className="text-xs text-grid-text-dim hover:text-grid-green transition-colors">{item.label}</a>
                 </li>
               ))}
             </ul>
@@ -58,7 +64,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-grid-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <span className="text-xs text-grid-text-dim">
-            &copy; {new Date().getFullYear()} Grid Impulse GmbH. All rights reserved.
+            &copy; {new Date().getFullYear()} Grid Impulse UG (in Gr&uuml;ndung). All rights reserved.
           </span>
 
           <div className="flex items-center gap-6">

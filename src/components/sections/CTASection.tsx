@@ -21,7 +21,7 @@ export default function CTASection() {
         </h2>
 
         <p className="text-grid-text-dim mb-10 max-w-xl mx-auto leading-relaxed">
-          We work with TSOs, DSOs, and municipal utilities across Germany, Netherlands, Belgium, and France. Get a personalized demo with your grid profile.
+          Built for TSOs, DSOs, and municipal utilities across Germany, Netherlands, Belgium, and France. Get a personalized demo with your grid profile.
         </p>
 
         {/* Email form */}
