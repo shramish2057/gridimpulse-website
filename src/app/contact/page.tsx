@@ -29,7 +29,24 @@ export default function ContactPage() {
                 network topology that matches your environment.
               </p>
 
-              <form onSubmit={(e) => e.preventDefault()} className="space-y-4">
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  const form = e.currentTarget;
+                  const name = (form.elements.namedItem("name") as HTMLInputElement).value;
+                  const org = (form.elements.namedItem("organisation") as HTMLInputElement).value;
+                  const role = (form.elements.namedItem("role") as HTMLInputElement).value;
+                  const email = (form.elements.namedItem("email") as HTMLInputElement).value;
+                  const type = (form.elements.namedItem("type") as HTMLSelectElement).value;
+                  const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value;
+                  const subject = encodeURIComponent(`Demo Request from ${name} (${org})`);
+                  const body = encodeURIComponent(
+                    `Name: ${name}\nOrganisation: ${org}\nRole: ${role}\nEmail: ${email}\nType: ${type}\n\nMessage:\n${message || "N/A"}`
+                  );
+                  window.location.href = `mailto:contact@gridimpulse.com?subject=${subject}&body=${body}`;
+                }}
+                className="space-y-4"
+              >
                 <div>
                   <label htmlFor="name" className="block text-xs font-mono text-grid-text-dim tracking-wider mb-1.5">NAME</label>
                   <input
@@ -121,12 +138,6 @@ export default function ContactPage() {
                   <p className="text-grid-text text-sm">Frankfurt, Germany</p>
                 </div>
 
-                <div className="p-6 rounded-xl border border-grid-border bg-grid-surface/30">
-                  <h3 className="text-xs font-mono text-grid-text-dim tracking-wider mb-2">GITHUB</h3>
-                  <a href="https://github.com/shramish2057/gridimpulse" className="text-grid-green hover:underline font-mono text-sm">
-                    github.com/shramish2057/gridimpulse
-                  </a>
-                </div>
               </div>
             </div>
           </div>

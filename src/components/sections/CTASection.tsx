@@ -26,11 +26,19 @@ export default function CTASection() {
 
         {/* Email form */}
         <form
-          onSubmit={(e) => e.preventDefault()}
+          onSubmit={(e) => {
+            e.preventDefault();
+            const email = (e.currentTarget.elements.namedItem("demo-email") as HTMLInputElement).value;
+            const subject = encodeURIComponent("Demo Request");
+            const body = encodeURIComponent(`Hi Grid Impulse,\n\nI would like to request a demo.\n\nEmail: ${email}\n`);
+            window.location.href = `mailto:contact@gridimpulse.com?subject=${subject}&body=${body}`;
+          }}
           className="flex flex-col sm:flex-row items-center gap-3 max-w-md mx-auto mb-6"
         >
           <input
+            name="demo-email"
             type="email"
+            required
             placeholder="your.name@utility.eu"
             className="w-full px-4 py-3 bg-grid-surface border border-grid-border rounded text-sm text-grid-text placeholder-grid-text-dim focus:outline-none focus:border-grid-green/50 transition-colors font-mono"
           />
