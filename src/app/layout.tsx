@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   description:
     "AI agents that autonomously detect faults, resolve congestion, and optimize renewable integration for TSOs and DSOs across the EU.",
   keywords: ["grid automation", "TSO", "DSO", "AI agents", "energy grid", "redispatch", "EU AI Act"],
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     title: "Grid Impulse",
     description: "Autonomous Intelligence for Europe's Energy Grid",
