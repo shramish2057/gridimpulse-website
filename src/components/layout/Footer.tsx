@@ -63,7 +63,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-grid-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <span className="text-xs text-grid-text-dim">
-            &copy; {new Date().getFullYear()} Grid Impulse UG (in Gr&uuml;ndung). All rights reserved.
+            &copy;{" "}{new Date().getFullYear()}{" "}Grid Impulse UG (in Gr&uuml;ndung). All rights reserved.
           </span>
 
           <div className="flex items-center gap-6">
