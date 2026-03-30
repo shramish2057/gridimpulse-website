@@ -2,6 +2,10 @@
 
 import GridCanvas from "./GridCanvas";
 
+function scrollTo(id: string) {
+  document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+}
+
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -37,18 +41,18 @@ export default function HeroSection() {
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href="#contact"
-            className="px-8 py-3.5 bg-grid-green text-grid-dark font-display font-semibold text-sm tracking-wider rounded hover:bg-grid-green/90 transition-all hover:shadow-[0_0_30px_rgba(22,163,74,0.3)] uppercase"
+          <button
+            onClick={() => scrollTo("contact")}
+            className="px-8 py-3.5 bg-grid-green text-grid-dark font-display font-semibold text-sm tracking-wider rounded hover:bg-grid-green/90 transition-all hover:shadow-[0_0_30px_rgba(22,163,74,0.3)] uppercase cursor-pointer"
           >
             Request Demo
-          </a>
-          <a
-            href="#how-it-works"
-            className="px-8 py-3.5 border border-grid-border text-grid-text-dim font-display font-medium text-sm tracking-wider rounded hover:border-grid-green/40 hover:text-grid-text transition-all uppercase"
+          </button>
+          <button
+            onClick={() => scrollTo("how-it-works")}
+            className="px-8 py-3.5 border border-grid-border text-grid-text-dim font-display font-medium text-sm tracking-wider rounded hover:border-grid-green/40 hover:text-grid-text transition-all uppercase cursor-pointer"
           >
             How It Works
-          </a>
+          </button>
         </div>
 
         {/* Target markets */}

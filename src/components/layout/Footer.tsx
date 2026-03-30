@@ -19,7 +19,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {["Fault Detection", "Congestion Management", "Load Forecasting", "Topology Monitoring", "Decision Workflow"].map((item) => (
                 <li key={item}>
-                  <a href="#features" className="text-xs text-grid-text-dim hover:text-grid-green transition-colors">{item}</a>
+                  <a href="/" className="text-xs text-grid-text-dim hover:text-grid-green transition-colors">{item}</a>
                 </li>
               ))}
             </ul>
