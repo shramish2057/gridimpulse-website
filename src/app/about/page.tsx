@@ -29,7 +29,7 @@ export default function AboutPage() {
               <p>
                 Grid Impulse is building autonomous AI agents for Europe&apos;s electricity grid operators.
                 Our mission is to give every DSO and Stadtwerk the same operational intelligence that only
-                the largest TSOs can currently afford &mdash; deployed on their infrastructure, under their control.
+                the largest TSOs can currently afford. Deployed on their infrastructure, under their control.
               </p>
               <p>
                 Founded in 2026 in Frankfurt, Germany. Built by engineers who believe the energy transition
@@ -40,11 +40,12 @@ export default function AboutPage() {
 
           {/* Hiring */}
           <div className="p-8 rounded-xl border border-grid-border bg-grid-surface/30">
-            <h2 className="font-display font-bold text-2xl text-grid-text mb-6">We are hiring</h2>
+            <h2 className="font-display font-bold text-2xl text-grid-text mb-6">Build with us</h2>
             <p className="text-grid-text-dim leading-relaxed mb-4">
-              Grid Impulse is an early-stage company. If you have deep expertise in power systems,
-              grid operations, or EU energy regulation and want to build something that matters for
-              the energy transition, reach out at{" "}
+              We are looking for people who care about the energy transition and want to
+              solve hard problems at the intersection of AI and critical infrastructure.
+              If you have deep expertise in power systems, grid operations, or EU energy
+              regulation, we would love to hear from you at{" "}
               <a href="mailto:contact@gridimpulse.com" className="text-grid-green hover:underline">
                 contact@gridimpulse.com
               </a>

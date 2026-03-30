@@ -3,7 +3,7 @@ import Footer from "@/components/layout/Footer";
 
 export const metadata = {
   title: "Careers | Grid Impulse",
-  description: "Join Grid Impulse — we are building autonomous AI agents for European grid operators.",
+  description: "Join Grid Impulse. We are building autonomous AI agents for European grid operators.",
 };
 
 const roles = [
@@ -23,7 +23,7 @@ const roles = [
     description:
       "Experience with time series forecasting, anomaly detection, or reinforcement learning for physical systems.",
     details:
-      "You will work on the forecasting and detection agents \u2014 improving model accuracy, adding new signal sources, and building the feedback loop from operator decisions back into model training.",
+      "You will work on the forecasting and detection agents: improving model accuracy, adding new signal sources, and building the feedback loop from operator decisions back into model training.",
   },
   {
     title: "Business Development",

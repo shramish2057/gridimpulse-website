@@ -20,11 +20,11 @@ export default function ContactPage() {
           </h1>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            {/* Left — Request a Demo */}
+            {/* Request a Demo */}
             <div>
               <h2 className="font-display font-bold text-2xl text-grid-text mb-4">Request a Demo</h2>
               <p className="text-grid-text-dim leading-relaxed mb-8">
-                We offer personalised demos configured for your grid profile &mdash; TSO, DSO, or
+                We offer personalised demos configured for your grid profile: TSO, DSO, or
                 municipal utility. Bring your technical team. We will show you the platform on a
                 network topology that matches your environment.
               </p>
@@ -104,7 +104,7 @@ export default function ContactPage() {
               </form>
             </div>
 
-            {/* Right — Direct contact */}
+            {/* Direct contact */}
             <div>
               <h2 className="font-display font-bold text-2xl text-grid-text mb-8">Direct Contact</h2>
 

@@ -3,7 +3,7 @@ import Footer from "@/components/layout/Footer";
 
 export const metadata = {
   title: "Privacy Policy | Grid Impulse",
-  description: "Privacy policy for Grid Impulse — how we handle your data.",
+  description: "Privacy policy for Grid Impulse. How we handle your data.",
 };
 
 export default function PrivacyPolicyPage() {
@@ -67,7 +67,7 @@ export default function PrivacyPolicyPage() {
             <section>
               <h2 className="font-display font-bold text-xl text-grid-text mb-4">3. Legal basis</h2>
               <p>
-                We process your data on the basis of Article 6(1)(b) GDPR &mdash; processing
+                We process your data on the basis of Article 6(1)(b) GDPR. Processing
                 is necessary for the performance of pre-contractual measures. When you submit
                 a demo request or inquiry, you are initiating a business conversation and we
                 process your data to respond to that request.
@@ -93,7 +93,7 @@ export default function PrivacyPolicyPage() {
               </p>
               <ul className="mt-3 space-y-2 list-disc list-inside">
                 <li>
-                  <strong className="text-grid-text">Vercel Inc.</strong> &mdash; website hosting.
+                  <strong className="text-grid-text">Vercel Inc.</strong> (website hosting).
                   Our deployment is configured to use EU servers only. Vercel&apos;s privacy policy
                   is available at vercel.com/legal/privacy-policy.
                 </li>
